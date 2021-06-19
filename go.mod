@@ -1,4 +1,4 @@
-module github.com/cross-ts/qiita-trend
+module github.com/cross-ts/qiita-trend-go
 
 go 1.16
 
