@@ -1,2 +1,2 @@
-# qiita-trend-golang
+# qiita-go
 Qiitaのトレンドをいい感じにするやつ
