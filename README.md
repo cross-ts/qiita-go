@@ -1,2 +1,2 @@
-# qiita-go
+# qiita-trend
 Qiitaのトレンドをいい感じにするやつ
