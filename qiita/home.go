@@ -56,7 +56,7 @@ type TrendScraper struct {
 	Query string
 }
 
-func (s *TrendScraper) scrape() (HomeArticleTrendFeed, error) {
+func (s *TrendScraper) Scrape() (HomeArticleTrendFeed, error) {
 	document, err := goquery.NewDocument(s.Url)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
