@@ -68,7 +68,7 @@ func (s *TrendScraper) scrape() (HomeArticleTrendFeed, error) {
 	return homeArticleTrendFeed, nil
 }
 
-func newTrendScraper() *TrendScraper {
+func NewTrendScraper() *TrendScraper {
 	return &TrendScraper{
 		Url:   "https://qiita.com/",
 		Query: "script[data-component-name=HomeArticleTrendFeed]",
