@@ -9,46 +9,46 @@ import (
 )
 
 type HomeArticleTrendFeed struct {
-	Trend *Trend  `json:"trend"`
-	Scope *string `json:"scope"`
-	Type  *string `json:"type"`
+	Trend Trend  `json:"trend"`
+	Scope string `json:"scope"`
+	Type  string `json:"type"`
 }
 
 type Trend struct {
-	Edges *[]Edge `json:"edges"`
+	Edges []Edge `json:"edges"`
 }
 
 type Edge struct {
-	IsLikeByViewer   *bool     `json:"isLikedByViewer"`
-	IsNewArrival     *bool     `json:"isNewArrival"`
-	FollowingLinkers *[]string `json:"followingLikers"`
-	Node             *Node     `json:"node"`
+	IsLikeByViewer   bool     `json:"isLikedByViewer"`
+	IsNewArrival     bool     `json:"isNewArrival"`
+	FollowingLinkers []string `json:"followingLikers"`
+	Node             Node     `json:"node"`
 }
 
 type Node struct {
-	EncryptedId             *string   `json:"encryptedId"`
-	IsLikeByViewer          *bool     `json:"isLikedByViewer"`
-	IsStockableByViewer     *bool     `json:"isStockableByViewer"`
-	IsStockedByViewer       *bool     `json:"isStockedByViewer"`
-	LikesCount              *int      `json:"likesCount"`
-	LinkUrl                 *string   `json:"linkUrl"`
-	PublishedAt             *string   `json:"publishedAt"`
-	Title                   *string   `json:"title"`
-	Uuid                    *string   `json:"uuid"`
-	Author                  *Author   `json:"author"`
-	Organization            *string   `json:"organization"`            // TBD
-	RecentlyFollowingLikers *[]string `json:"recentlyFollowingLikers"` // TBD
-	Tags                    *[]Tag    `json:"tags"`
+	EncryptedId             string   `json:"encryptedId"`
+	IsLikeByViewer          bool     `json:"isLikedByViewer"`
+	IsStockableByViewer     bool     `json:"isStockableByViewer"`
+	IsStockedByViewer       bool     `json:"isStockedByViewer"`
+	LikesCount              int      `json:"likesCount"`
+	LinkUrl                 string   `json:"linkUrl"`
+	PublishedAt             string   `json:"publishedAt"`
+	Title                   string   `json:"title"`
+	Uuid                    string   `json:"uuid"`
+	Author                  Author   `json:"author"`
+	Organization            string   `json:"organization"`            // TBD
+	RecentlyFollowingLikers []string `json:"recentlyFollowingLikers"` // TBD
+	Tags                    []Tag    `json:"tags"`
 }
 
 type Author struct {
-	ProfileImageUrl *string `json:"profileImageUrl"`
-	UrlName         *string `json:"urlName"`
+	ProfileImageUrl string `json:"profileImageUrl"`
+	UrlName         string `json:"urlName"`
 }
 
 type Tag struct {
-	UrlName *string `json:"urlName"`
-	Name    *string `json:"name"`
+	UrlName string `json:"urlName"`
+	Name    string `json:"name"`
 }
 
 type TrendScraper struct {
